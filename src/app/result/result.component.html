@@ -1,0 +1,14 @@
+<div id="customers">
+  <table>
+    <tr>
+      <th> TITLE</th>
+      <th> NEWS </th>
+      <th> WORD COUNT</th> 
+    </tr>
+    <tr *ngFor="let d of data">
+      <th>{{d.title}}</th>
+      <th [innerHTML]="d.snippet"></th>
+      <th> {{d.wordcount}}</th>
+    </tr>
+  </table>
+</div>
